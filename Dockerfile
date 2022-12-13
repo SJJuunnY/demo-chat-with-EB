@@ -1,4 +1,5 @@
-FROM lambci/lambda:build-python3.8
+FROM public.ecr.aws/sam/build-python3.9:latest
+#FROM lambci/lambda:build-python3.8
 
 ENV AWS_DEFAULT_REGION ap-northeast-2
 ENV APP_DIR /var/task
