@@ -7,10 +7,10 @@ FROM public.ecr.aws/sam/build-python3.9:latest
 # FROM public.ecr.aws/sam/build-python3.8:latest-arm64
 # FROM public.ecr.aws/sam/build-python3.10:1.81.0-20230420214754-x86_64
 # FROM public.ecr.aws/sam/build-python3.10:1.90.0-20230706224408
-# FROM public.ecr.aws/sam/build-python3.10:1.90.0-20230706224408-x86_64
+FROM public.ecr.aws/sam/build-python3.10:1.90.0-20230706224408-x86_64
 # FROM public.ecr.aws/sam/build-python3.10:1.90.0-20230706224408-arm64
 
-
+RUN pip install --upgrade pip
 ENV AWS_DEFAULT_REGION ap-northeast-2
 ENV APP_DIR /var/task
 
